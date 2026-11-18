@@ -1,0 +1,11 @@
+task,model,validation,balanced_accuracy
+eyes closed vs open,logistic regression,random split (leaky),0.9027777777777777
+eyes closed vs open,logistic regression,leave participants out,0.8972222222222221
+eyes closed vs open,logistic regression,leave one session out,0.9055555555555556
+eyes closed vs open,random forest,random split (leaky),0.8705555555555555
+eyes closed vs open,random forest,leave participants out,0.85
+eyes closed vs open,random forest,leave one session out,0.8777777777777778
+sex (demo of leakage),logistic regression,random split (leaky),0.8102678571428571
+sex (demo of leakage),logistic regression,leave participants out,0.7879464285714286
+sex (demo of leakage),random forest,random split (leaky),0.8599702380952381
+sex (demo of leakage),random forest,leave participants out,0.7723214285714286
