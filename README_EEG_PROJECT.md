@@ -63,6 +63,20 @@ How stable is resting-state EEG within a person across hours and weeks, and does
 - Eyes closed vs open is so consistent across people that leakage barely matters.
 - For sex, the random forest scored 9 points higher under the leaky split than the honest one; the logistic regression barely changed. This is suggestive from a single dataset and was not tested statistically.
 
+## Figures
+
+![ICC heatmaps](figures/fig1_icc.png)
+
+**Figure 1.** Test-retest ICC for each region and band, for eyes closed and eyes open, 90 minutes apart (left) and one month apart (right). Alpha is the most reliable band; frontal and beta measures lose the most reliability over a month.
+
+![Drift in occipital alpha](figures/fig2_drift.png)
+
+**Figure 2.** Occipital alpha power (eyes closed, log10) for each participant across the three sessions. Grey lines are individuals, the blue line is the group mean. People differ from each other far more than any one person changes, which is why ICC is high, yet individual changes of a few tenths of a log unit (roughly 2x in power) are still common.
+
+![Validation schemes](figures/fig3_validation.png)
+
+**Figure 3.** Balanced accuracy under three validation schemes (dashed line = chance). Eyes closed vs open barely changes with the scheme. For sex, the random forest scores higher under the leaky random split, where a person's recordings appear in both training and test data. The sex task has no leave-one-session-out bars because sex is fixed per person.
+
 ## Limitations
 
 - Minimal cleaning (band-pass filter only; no artifact rejection or ICA). Frontal and beta measures are the most vulnerable to blink and muscle artifact, which may explain their poor one-month reliability. This is a hypothesis, not tested.
